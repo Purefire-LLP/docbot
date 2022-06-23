@@ -1,0 +1,48 @@
+.widget{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    .left, .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title{
+            font-weight: bold;
+            font-size: 14px;
+            color: rgb(146, 146, 146);
+        }
+        .counter{
+            font-weight: 100;
+            font-size: 25px;
+        }
+        .link{
+            width: max-content;
+            font-size: 12px;
+            border-bottom: 0.5px solid gray;
+        }
+        .stat{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            &.positive{
+                color: rgb(63, 231, 181);
+            }
+            &.negative{
+                color: rgb(236, 79, 79);
+            }
+        }
+        .icon{
+            font-size: 14px;
+            padding: 5px;
+            background-color: rgb(226, 75, 75);
+            border-radius: 5px;
+            align-self: flex-end;
+            color: white;
+        }
+    }
+}
