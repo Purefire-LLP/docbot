@@ -9,7 +9,21 @@ export const Home = () => {
         <Sidebar/>
         <div className="homeContainer">
           <Navbar/>
-          Home Container
+          {/* /* widgets on the top of the dashboard*/ }
+          <div className="widgets">
+            <Widget type="patients"/>
+            <Widget type="reports"/>
+            <Widget type="consultations"/>
+            <Widget type="experience"/>
+          </div>
+          <div className="charts">
+            <Chart/>
+            <Progress/>
+          </div>
+          <div className="listcontainer">
+            <Recentpatients/>
+            <Recentnotif/>
+          </div>
         </div>
     </div>
   )
