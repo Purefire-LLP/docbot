@@ -2,6 +2,11 @@
 import "./home.scss"
 import { Sidebar } from "../../components/sidebar/Sidebar"
 import { Navbar } from "../../components/navbar/Navbar"
+import { Widget } from "../../components/widget/Widget"
+import { Chart } from "../../components/chart/Chart"
+import { Progress } from "../../components/progress/Progress"
+import { Recentpatients } from "../../components/recentpatients/Recentpatients"
+import { Recentnotif } from "../../components/recentnotif/Recentnotif"
 
 export const Home = () => {
   return (
