@@ -1,17 +1,17 @@
-### Docbot APP:
+# Docbot APP:
 An app to book an appointment via AI using WhatsApp.
 
-# End Users:
+## End Users:
 Doctors and clinic staff
 
-# Functions:
+## Functions:
 Can view patient details and history, edit prescription, access information about appointments via a calander.
 Users can also plan their workday using this app.
 
-# Pre-requisites for making this application:
+## Pre-requisites for making this application:
 Familiarity with HTML, CSS, SASS and JAVASCRIPT
 
-# Detailed dev process:
+## Detailed dev process:
 Package manager used: Node
 CLI command--> create react app
 Icons: Material UI
