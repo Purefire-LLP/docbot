@@ -9,13 +9,17 @@ import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 import PersonIcon from '@mui/icons-material/Person';
 import LogoutIcon from '@mui/icons-material/Logout';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import { Link } from "react-router-dom"
 
 
 export const Sidebar = () => {
   return (
     <div className="sidebar">
         <div className="top">
-            <span className="logo">docbot</span>
+            <Link to="/" style={{ textDecoration: "none" }}>
+                <span className="logo">docbot</span>
+            </Link>
         </div>
         <hr/>
         <div className="center">
@@ -23,21 +27,25 @@ export const Sidebar = () => {
             <p className="title">Main</p>
                 <li>
                     <DashboardCustomizeIcon className="icon"/>
-                    <span>Dashboard</span>
+                    <Link to="/" style={{ textDecoration: "none" }}><span>Dashboard</span></Link>
                 </li>
                 <p className="title">Users</p>
                 <li>
                     <GroupIcon className="icon"/>
-                    <span>Users</span>
+                    <Link to="/users" style={{ textDecoration: "none" }}><span>Users</span></Link>
                 </li>
                 <li>
                     <AccessibleIcon className="icon"/>
-                    <span>Patients</span>
+                    <Link to="/patients" style={{ textDecoration: "none" }}><span>Patients</span></Link>
                 </li>
                 <p className="title">Useful Links</p>
                 <li>
                     <InsertChartIcon className="icon"/>
                     <span>Stats</span>
+                </li>
+                <li>
+                    <CalendarMonthIcon className="icon"/>
+                    <span>Calandar</span>
                 </li>
                 <li>
                     <NotificationsIcon className="icon"/>
