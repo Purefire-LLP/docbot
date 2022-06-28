@@ -20,12 +20,12 @@ function App() {
         <Route path="users" >
           <Route index element={<Users/>}/>
           <Route path=":userId" element={<Single/>}/>
-          <Route path="new" element={<New/>}/>
+          <Route path="new" element={<New inputs={userInputs} title= "Add New User"/>}/>
         </Route>
         <Route path="patients" >
           <Route index element={<Users/>}/>
           <Route path=":patientId" element={<Single/>}/>
-          <Route path="new" element={<New/>}/>
+          <Route path="new" element={<New inputs={patientInputs} title= "Add New Patient"/>}/>
         </Route>
       </Route>
     </Routes>
