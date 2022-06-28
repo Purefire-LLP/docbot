@@ -8,6 +8,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { userInputs } from "./formSource";
+import { patientInputs } from "./formSource";
 
 function App() {
   return (
