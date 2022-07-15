@@ -1,0 +1,21 @@
+.calander{
+    display: flex;
+    .calanderContainer{
+        flex: 6;
+        // .calendarMain{
+        //     height: 100vh;
+        //     display: flex;
+        //     flex-direction: column;
+        // }
+        .calendarHeaderContainer{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            .calendarSidebarContainer{
+                display: flex;
+                flex: 1 1 0%;
+            }
+        }
+    }
+
+}
